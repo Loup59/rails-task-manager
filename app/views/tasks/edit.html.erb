@@ -1,0 +1,15 @@
+<%= form_with model: @task do |f| %>
+  <div style="margin: 10px">
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  </div>
+  <div style="margin: 10px">
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  </div>
+  <div style="margin: 10px">
+    <%= f.label :completed %>
+    <%= f.check_box :completed %>
+  </div>
+  <%= f.submit %>
+<% end %>
